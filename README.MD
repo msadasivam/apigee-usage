@@ -7,13 +7,13 @@
 ---
 
 ## Use Case
-As a customer with annual API usage limits, I need to monitor total API usage across the year to compare against entitlements and avoid overage charges.
+As a customer with annual API usage limits, I need to monitor total API usage across the year.
 
 ## Problem
-Apigee Edge and Apigee X do not currently offer an out-of-the-box solution to determine overall API traffic usage consolidated across all environments within an organization.
+Apigee Edge and Apigee X do not currently provide an out-of-the-box solution to determine overall API traffic usage consolidated across all environments within an organization.
 
 ## Solution
-Calculate API call volume using the **Apigee Metrics API** across an organization and all of its environments, combining the monthly results to produce the grand total.
+Calculate API call volume using the **Apigee Stats API** across an organization and all of its environments, combining the monthly results to produce the grand total.
 
 ### Why Monthly Calls?
 The Metrics API time range in **Apigee X** is limited to **92 days** (compared to 365 days in Apigee Edge). Using a monthly time window works seamlessly across both platforms while providing granular monthly details.
@@ -122,7 +122,7 @@ ORG_TOTAL: 651
 
 ---
 
-## Stats API Limits
+## Stats API
 The data is retrived from Stats API:
 - [Stats API (Apigee X)](https://docs.cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.environments.stats/get)
 - [Stats API (Apigee Edge)](https://apidocs.apigee.com/docs/stats/1/routes/organizations/%7Borg_name%7D/environments/%7Benv_name%7D/stats/get)
