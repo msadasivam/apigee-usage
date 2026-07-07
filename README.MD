@@ -7,7 +7,7 @@
 ---
 
 ## Use Case
-As a customer with annual API usage limits, you need to monitor total API usage across the year to compare against entitlements and avoid overage charges.
+As a customer with annual API usage limits, I need to monitor total API usage across the year to compare against entitlements and avoid overage charges.
 
 ## Problem
 Apigee Edge and Apigee X do not currently offer an out-of-the-box solution to determine overall API traffic usage consolidated across all environments within an organization.
@@ -122,7 +122,7 @@ ORG_TOTAL: 651
 
 ---
 
-## Analytics API Limits
-Metrics APIs have limits, but they are generally not prohibitive when running monthly queries. For exact quotas and details, refer to:
-- [Analytics API limits for Apigee Edge](https://cloud.google.com/apigee/docs/api-platform/analytics/analytics-services-limits)
-- [Analytics API limits for Apigee X](https://cloud.google.com/apigee/docs/api-platform/analytics/analytics-services-limits)
+## Stats API Limits
+The data is retrived from Stats API:
+- [Stats API (Apigee X)](https://docs.cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.environments.stats/get)
+- [Stats API (Apigee Edge)](https://apidocs.apigee.com/docs/stats/1/routes/organizations/%7Borg_name%7D/environments/%7Benv_name%7D/stats/get)
